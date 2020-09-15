@@ -40,8 +40,8 @@ class App extends React.Component {
         console.log({image});
 
         if (image) {
-			this.setState({ image });
-		}
+    			this.setState({ image });
+    		}
 	};
 
 	render() {
@@ -77,11 +77,12 @@ class App extends React.Component {
 
                             <Button size="xl" onClick={ this.getImage }>Загрузить</Button>
                         </FormLayout>
-
 						{
 							!!image &&
 							<Div style={{ textAlign: 'center' }}>
                                 <img src={ image } alt="remote file" />
+
+
 							</Div>
 						}
                     </Group>
